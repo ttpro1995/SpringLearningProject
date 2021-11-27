@@ -1,4 +1,4 @@
-package me.thaithien.springtutorial.SpringLearningProject.restservice;
+package me.thaithien.springtutorial.SpringLearningProject.restservice.model;
 
 public class Greeting {
     private final long id;
