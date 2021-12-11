@@ -49,6 +49,11 @@ public class KittenController {
         return repository.save(newKitten);
     }
 
-
+    @PostMapping("/kittens/bydna")
+    Kitten newKittenByDNA(@RequestParam("dna")  String dna) {
+        Kitten kit = new Kitten();
+        kit.setDna(dna);
+        return repository.save(kit);
+    }
 
 }
